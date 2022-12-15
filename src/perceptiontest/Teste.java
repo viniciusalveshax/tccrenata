@@ -25,8 +25,8 @@ public class Teste {
     }
   public void savetofile() throws IOException{
       
-  //System.out.printf("ola");
-       try (FileWriter arq = new FileWriter("/Users/renatarodriguespintos/teste0.xml")) {
+    System.out.printf("ola");
+       try (FileWriter arq = new FileWriter("teste0.xml")) {
            PrintWriter gravararq = new PrintWriter(arq);
            
            

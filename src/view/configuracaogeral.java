@@ -11,6 +11,7 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
+import perceptiontest.Teste;
 import static view.menu.app;
 
 /**
@@ -98,19 +99,16 @@ public class configuracaogeral extends javax.swing.JFrame {
     private void salvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salvarActionPerformed
         // TODO add your handling code here:
        jLabel2.setText(instrucaogeral.getText());
+                   System.out.println("testando salvar arquivo00098");
 
-        app.meuteste.setInstrucaogeral(instrucaogeral.getText());
+       Teste t = new Teste();
         try {
-            app.meuteste.savetofile();
+            t.savetofile();
         } catch (IOException ex) {
             Logger.getLogger(configuracaogeral.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
-        
-           
-        
-        
-        
+       
+       
     }//GEN-LAST:event_salvarActionPerformed
 
     public JTextField getInstrucaogeral() {

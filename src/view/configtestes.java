@@ -120,6 +120,9 @@ public static configtestes app = null;
 
     private void editdiscActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editdiscActionPerformed
         // TODO add your handling code here:
+        configtestesdisc config = new configtestesdisc();
+        config.setLocationRelativeTo(null);
+        config.setVisible(true);
     }//GEN-LAST:event_editdiscActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
