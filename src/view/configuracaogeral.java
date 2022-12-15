@@ -4,6 +4,9 @@
  */
 package view;
 
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
@@ -94,12 +97,17 @@ public class configuracaogeral extends javax.swing.JFrame {
 
     private void salvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salvarActionPerformed
         // TODO add your handling code here:
-        jLabel2.setText(instrucaogeral.getText());
-       // fazer meuteste ser visto como objeto app.meuteste.setInstrucaogeral(instrucaogeral.getText());
-        //JOptionPane.showInputDialog(instrucaogeral.getText());
+       jLabel2.setText(instrucaogeral.getText());
+
+        app.meuteste.setInstrucaogeral(instrucaogeral.getText());
+        try {
+            app.meuteste.savetofile();
+        } catch (IOException ex) {
+            Logger.getLogger(configuracaogeral.class.getName()).log(Level.SEVERE, null, ex);
+        }
         
-        // public void setinstrucaogeral(String Teste){
-       // instrucaogeral = Teste;
+        
+           
         
         
         

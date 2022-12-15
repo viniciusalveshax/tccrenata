@@ -14,14 +14,18 @@ import perceptiontest.Teste;
  */
 public class menu extends javax.swing.JFrame {
  public static menu app = null;
+     public static Teste meuteste;
     /**
      * Creates new form menu
      */
     public menu() {
         initComponents();
-            Teste meuteste = new Teste();
+        Teste meuteste = new Teste();
     }
-
+    
+    public static void setinstruction(String newinstruction) {
+    meuteste.setInstrucaogeral(newinstruction);
+    }
     
 
     /**
@@ -99,7 +103,7 @@ public class menu extends javax.swing.JFrame {
      */
     public static void main(String args[]) {
       
-    
+//        Teste meuteste = new Teste();
         
         try {
             //for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
